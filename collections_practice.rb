@@ -26,13 +26,15 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  array.each {|word| word[3] = "$"}
-  i = 0 
-  while i < array.length 
-    yield(array[i])
-    i += 1 
-  end
-  array
+  new_array = []
+  new_array << array.each {|word| word[3] = "$"}
+  new_array
+  #i = 0 
+  #while i < array.length 
+  #  yield(array[i])
+  #  i += 1 
+  #end
+  #array
 end
 
 def find_a(array)
