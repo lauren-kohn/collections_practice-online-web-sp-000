@@ -26,9 +26,10 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  new_array = []
-  new_array << array.each {|word| word[2] = "$"}
-  new_array
+  #new_array = []
+  #new_array << 
+  array.each {|word| word[2] = "$"}
+  #new_array
   #i = 0 
   #while i < array.length 
   #  yield(array[i])
