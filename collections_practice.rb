@@ -38,6 +38,6 @@ def sum_array(array)
 end
 
 def add_s(array)
-  new_array = [0, 2, 3].each_with_index.collect {|word| word + "s"}
+  new_array = [0, 2, 3].collect {|word| word + "s"}
   new_array.insert(1, array[1])
 end 
