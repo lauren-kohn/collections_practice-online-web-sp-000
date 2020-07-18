@@ -38,7 +38,8 @@ def sum_array(array)
 end
 
 def add_s(array)
-  new_array = []
-  new_array << [0, 2, 3].each {|word| word + "s"}
-  new_array.insert(1, array[1])
+  array.each_with_index.collect do |word, i|
+    
 end 
+
+
